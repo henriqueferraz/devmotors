@@ -1,0 +1,16 @@
+'use client'
+
+import Link from "next/link"
+import styles from './error.module.scss'
+
+export default function Error() {
+    return (
+        <div className={styles.error}>
+            <h1>...Ops! essa página não existe</h1>
+            <h2>Erro 404 - Página não encontrada</h2>
+            <Link href='/'>
+                Voltar para Home :)
+            </Link>
+        </div>
+    )
+}
